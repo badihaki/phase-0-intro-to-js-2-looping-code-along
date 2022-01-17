@@ -7,12 +7,14 @@ function writeCards(names, event){
     // collect messages in new araryand return this array at end of function
     // names=patrons;
     // event="surprise";
-    let messages=[];
+    const messages=[];
     for(let i=0; i<names.length; i++){
         // console.log(`Thank you, ${names[n]}, for the wonderful ${event} gift!`);
         messages[i]=`Thank you, ${names[i]}, for the wonderful ${event} gift!`;
+        // messages.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`)
     }
-    return console.log(messages);
+    // return console.log(messages);
+    return messages;
 }
 writeCards(patrons, "surprise");
 // writeCards(["Guadalupe", "Ollie", "Aki"], "surprise");
@@ -24,4 +26,4 @@ function countDown(integer){
     }
 }
 
-countDown(patrons.length);
+// countDown(patrons.length);
